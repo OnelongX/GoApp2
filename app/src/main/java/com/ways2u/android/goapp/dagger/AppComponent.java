@@ -36,5 +36,4 @@ public interface AppComponent {
     Validator getValidator();
 
     GankApi getGankApi();
-    RetrofitService getRetrofitService();
 }

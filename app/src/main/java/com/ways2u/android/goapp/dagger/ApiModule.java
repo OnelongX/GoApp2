@@ -22,16 +22,8 @@ import retrofit2.converter.gson.GsonConverterFactory;
  */
 @Module
 public class ApiModule {
-    /*
-    @Inject
-    private String baseUrl;
-    @Inject
-    private boolean isDebug;
-*/
 
     public ApiModule() {
-        //this.baseUrl = baseUrl;
-        //this.isDebug = isDebug;
     }
 
     @Provides
@@ -71,16 +63,4 @@ public class ApiModule {
         return restAdapter.create(GankApi.class);
     }
 
-    @Provides
-    @ApplicationScope
-    public RetrofitService provideRetrofitService(Retrofit retrofit) {
-        return retrofit.create(RetrofitService.class);
-    }
-/*
-    @Provides
-    @Singleton
-    public UserManager provideUserManager(GithubApiService githubApiService) {
-        return new UserManager(githubApiService);
-    }
-    */
 }

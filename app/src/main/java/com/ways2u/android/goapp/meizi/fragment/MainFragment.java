@@ -115,7 +115,6 @@ public class MainFragment extends BaseFragment implements SwipeRefreshLayout.OnR
         LogUtil.e(this, msg.obj.toString());
     }
 
-
         @Override
         protected void setupFragmentComponent(ActivityComponent activityComponent) {
 
